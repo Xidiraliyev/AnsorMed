@@ -42,8 +42,15 @@ body {
     font-weight: 700;
     src: url("../fonts/open-sans/open-sans-v35-latin-700.woff2") format("woff2");
 }
+@font-face {
+    font-display: swap;
+    font-family: "Open Sans Condenced";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/open-sans-condensed/OpenSans-CondBold.woff2") format("woff2");
+}
 :root {
-    --font-family: "Open Sans";
+    --font-family: "Open Sans", "Arial", sans-serif;
     --text-color: #222222;
     --brand-color: #0eb4c1;
     --white-color: #fff;
@@ -98,7 +105,8 @@ button {
     border: 2px solid var(--primary-red-color);
     border-radius: 8px;
     color: var(--white-color);
-    padding: 1rem 2.2rem;
+    font-family: "Open Sans Condenced";
+    padding: 1.2rem 2.4rem;
     font-weight: 700;
     font-size: 1.5;
     transition: 0.5s;
@@ -151,12 +159,19 @@ button {
     justify-content: space-between;
     color: var(--white-color);
 }
+
+.hero__info {
+    width: 500px;
+}
 .hero__info-title {
+    font-family: "Open Sans Condenced";
     font-weight: 700;
     font-size: 3.6rem;
     line-height: 1.2;
     margin-bottom: 1.6rem;
+    /* width: 50rem; */
 }
+
 .hero__info-text {
     font-size: 1.8rem;
     width: 440px;
@@ -171,6 +186,7 @@ button {
     justify-content: center;
 }
 .service__title {
+    font-family: "Open Sans Condenced";
     font-weight: 700;
     font-size: 3.6rem;
     line-height: 1.2;
@@ -191,6 +207,7 @@ button {
     padding-top: 2.5rem;
 }
 .service__card-info-title {
+    font-family: "Open Sans Condenced";
     margin-bottom: 2.4rem;
     font-size: 2.4rem;
     line-height: 1.2;
@@ -200,6 +217,7 @@ button {
     text-align: left;
 }
 .footer-top__container {
+    font-family: "Open Sans Condenced";
     padding-top: 6.4rem;
     display: flex;
     align-items: center;
@@ -223,7 +241,7 @@ button {
     line-height: 1.2;
     border: 2px solid #fff;
     border-radius: 8px;
-    padding: 1rem 2.2rem;
+    padding: 1.2rem 2.4rem;
 }
 .footer-top__btn:hover {
     border-color: var(--primary-red-color);
